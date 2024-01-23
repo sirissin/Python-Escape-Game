@@ -33,13 +33,16 @@ class Room:
     escape_code = 0
     game_objects = []
 
+    # defining what is in the room
     def __init__(self, escape_code, game_objects):
         self.escape_code = escape_code
         self.game_objects = game_objects
 
+    # making sure that the code is set
     def check_code(self, code):
         return self.escape_code == code
 
+    # List of game objects
     def get_game_object_names(self):
         names = []
         for object in self.game_objects:
@@ -47,7 +50,30 @@ class Room:
         return names
 
 
-game_object = GameObject("Knife", "Some appearance", "Some feel", "Some Smell")
+# Establishing the Game class
+class Game:
+    def __init__(self):
+        self.attempts = 0
+        objects = self.create_objects
+        self.room = Room(5412, objects)
 
-game_object.name = "Spoon"
-print(game_object.sniff())
+    # The objects used to solve the riddle
+    def create_objects(self):
+        return [
+            GameObject("Sweater", "It is a partially shredded red sweater and the tag says it is size "
+                                  "12.", "It is fuzzy, and feels like it is brand new.", "It faintly smells"
+                                    "of lavender."),
+            GameObject("Chair", "It is a three-legged chair.", "Upon feeling the chair over, you "
+                                "notice that a leg had been snapped off.", "It smells of old wood."),
+            GameObject("Journal", "The only entry states that the time should only be read in hours, "
+                                  "then minutes, then seconds (H-M-S).", "It feels old and heavily worn.", "It"
+                                    "smells musty."),
+            GameObject("Bowl of Soup", "It appears to be mushroom soup.", "It is cold.", "It "
+                                 "has the aroma of 5 different types of spices."),
+            GameObject("Clock", "The hour hand is pointing towards the soup, the minute hand towards the"
+                                "chair, and the second hand towards the sweater.", "The clock feels light, as if "
+                                   "missing components.", "It smells like plastic and metal.")
+        ]
+
+
+

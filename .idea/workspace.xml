@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="25ce25b5-a077-4a5a-97c4-144a71478b32" name="Changes" comment="Added in the different actions you can take along with a test example of it working.">
+    <list default="true" id="25ce25b5-a077-4a5a-97c4-144a71478b32" name="Changes" comment="Implemented the Room class">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/the game.py" beforeDir="false" afterPath="$PROJECT_DIR$/the game.py" afterDir="false" />
     </list>
@@ -79,13 +79,22 @@
       <option name="project" value="LOCAL" />
       <updated>1706035272547</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Implemented the Room class">
+      <option name="closed" value="true" />
+      <created>1706038475684</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1706038475684</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Just getting the files uploaded so I can push from here." />
     <MESSAGE value="Set up the first class and the relevant properties" />
     <MESSAGE value="Added in the different actions you can take along with a test example of it working." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added in the different actions you can take along with a test example of it working." />
+    <MESSAGE value="Implemented the Room class" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implemented the Room class" />
   </component>
 </project>
