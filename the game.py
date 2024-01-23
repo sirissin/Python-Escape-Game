@@ -54,7 +54,7 @@ class Room:
 class Game:
     def __init__(self):
         self.attempts = 0
-        objects = self.create_objects
+        objects = self.create_objects()
         self.room = Room(5412, objects)
 
     # The objects used to solve the riddle
@@ -75,5 +75,21 @@ class Game:
                                    "missing components.", "It smells like plastic and metal.")
         ]
 
+    # Runs the prompt, ergo defines a turns
+    def take_turn(self):
+        prompt = self.get_room_prompt()
+        selection = input(prompt)
+
+    # The text prompt that allows the user to choose what to do
+    def get_room_prompt(self):
+        prompt = "Enter the 4 digit lock code or choose an item to interact with:\n"
+        names = self.room.get_game_object_names()
+        index = 1
+        for name in names:
+            prompt += f"{index}. {name}\n"
+            index += 1
+        return prompt
 
 
+game = Game()
+game.take_turn()
