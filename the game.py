@@ -13,3 +13,20 @@ class GameObject:
         self.feel = feel
         self.smell = smell
 
+    # Different actions you can take
+    def look(self):
+        return f"You look at the {self.name}. {self.appearance}\n"
+
+
+    def touch(self):
+        return f"You touch at the {self.name}. {self.feel}\n"
+
+
+    def sniff(self):
+        return f"You sniff at the {self.name}. {self.smell}\n"
+
+
+game_object = GameObject("Knife", "Some appearance", "Some feel", "Some Smell")
+
+game_object.name = "Spoon"
+print(game_object.sniff())
