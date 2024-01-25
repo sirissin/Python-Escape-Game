@@ -20,11 +20,11 @@ class GameObject:
 
 
     def touch(self):
-        return f"You touch at the {self.name}. {self.feel}\n"
+        return f"You touch the {self.name}. {self.feel}\n"
 
 
     def sniff(self):
-        return f"You sniff at the {self.name}. {self.smell}\n"
+        return f"You sniff the {self.name}. {self.smell}\n"
 
 
 # The Room class
@@ -75,11 +75,14 @@ class Game:
                                    "missing components.", "It smells like plastic and metal.")
         ]
 
-    # Runs the prompt, ergo defines a turns
+    # Runs the prompt, ergo defines turns, further edited to keep the game going until the user closes the game or
+    # solves the puzzle
     def take_turn(self):
         prompt = self.get_room_prompt()
         selection = int(input(prompt))
-        self.select_object(selection - 1)
+        if selection >= 1 and selection <= 5:
+            self.select_object(selection - 1)
+            self.take_turn()
 
     # The text prompt that allows the user to choose what to do
     def get_room_prompt(self):
@@ -91,15 +94,27 @@ class Game:
             index += 1
         return prompt
 
+    # Prints out the interaction based on the index selected
     def select_object(self, index):
         selected_object = self.room.game_objects[index]
         prompt = self.get_object_interaction_string(selected_object.name)
         interaction = input(prompt)
-        print(interaction)
+        clue = self.interact_with_object(selected_object, interaction)
+        print(clue)
         return
 
+    # Returns a list of how the user can interaction with an object
     def get_object_interaction_string(self, name):
         return f"How do you want to interact with the {name}?\n 1. Look\n 2. Touch\n 3. Smell\n"
+
+    # A check to see what way the user wants to interact with the object and the appropriate response
+    def interact_with_object(self, object, interaction):
+        if interaction == "1":
+            return object.look()
+        elif interaction == "2":
+            return object.touch()
+        else:
+            return object.sniff()
 
 
 
