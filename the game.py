@@ -83,6 +83,16 @@ class Game:
         if selection >= 1 and selection <= 5:
             self.select_object(selection - 1)
             self.take_turn()
+        else:
+            is_code_correct = self.guess_code(selection)
+            if is_code_correct:
+                print("Congratulation, you win!")
+            else:
+                if self.attempts == 3:
+                    print("Game over, you ran out of guesses. Better luck next time!")
+                else:
+                    print(f"Incorrect, you have used {self.attempts}/3 attempts.\n")
+                    self.take_turn()
 
     # The text prompt that allows the user to choose what to do
     def get_room_prompt(self):
@@ -115,6 +125,14 @@ class Game:
             return object.touch()
         else:
             return object.sniff()
+
+    # Check the code and to keep track of how many guesses the user has made
+    def guess_code(self, code):
+        if self.room.check_code(code):
+            return True
+        else:
+            self.attempts += 1
+            return False
 
 
 

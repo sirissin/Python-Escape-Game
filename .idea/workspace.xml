@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="25ce25b5-a077-4a5a-97c4-144a71478b32" name="Changes" comment="Started to added response functionality that will take what the user answers and give back the appropriate response.&#10;Currently only works with the initial selection of what item to inspect.">
+    <list default="true" id="25ce25b5-a077-4a5a-97c4-144a71478b32" name="Changes" comment="Made it so where the game doesn't end until appropriate.&#10;Added functionality to check for the response on how the user wants to interact with the selected item and the correct response to the selection is given.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/the game.py" beforeDir="false" afterPath="$PROJECT_DIR$/the game.py" afterDir="false" />
     </list>
@@ -111,7 +111,15 @@
       <option name="project" value="LOCAL" />
       <updated>1706211920524</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Made it so where the game doesn't end until appropriate.&#10;Added functionality to check for the response on how the user wants to interact with the selected item and the correct response to the selection is given.">
+      <option name="closed" value="true" />
+      <created>1706213177375</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1706213177375</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -122,6 +130,7 @@
     <MESSAGE value="Implemented the Game class.&#10;Created the items used to solve the riddle of the escape game.&#10;Deleted the example object since the real ones were added." />
     <MESSAGE value="Fixed Game Class.&#10;Created the functions to define a turn and to list the options." />
     <MESSAGE value="Started to added response functionality that will take what the user answers and give back the appropriate response.&#10;Currently only works with the initial selection of what item to inspect." />
-    <option name="LAST_COMMIT_MESSAGE" value="Started to added response functionality that will take what the user answers and give back the appropriate response.&#10;Currently only works with the initial selection of what item to inspect." />
+    <MESSAGE value="Made it so where the game doesn't end until appropriate.&#10;Added functionality to check for the response on how the user wants to interact with the selected item and the correct response to the selection is given." />
+    <option name="LAST_COMMIT_MESSAGE" value="Made it so where the game doesn't end until appropriate.&#10;Added functionality to check for the response on how the user wants to interact with the selected item and the correct response to the selection is given." />
   </component>
 </project>
