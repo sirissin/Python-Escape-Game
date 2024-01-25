@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="25ce25b5-a077-4a5a-97c4-144a71478b32" name="Changes" comment="Implemented the Game class.&#10;Created the items used to solve the riddle of the escape game.&#10;Deleted the example object since the real ones were added.">
+    <list default="true" id="25ce25b5-a077-4a5a-97c4-144a71478b32" name="Changes" comment="Fixed Game Class.&#10;Created the functions to define a turn and to list the options.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/the game.py" beforeDir="false" afterPath="$PROJECT_DIR$/the game.py" afterDir="false" />
     </list>
@@ -23,22 +23,22 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 0
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
   <component name="ProjectId" id="2bMgEAm02KMajV2TIht2uM4X5hK" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python.the game.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.the game.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -95,7 +95,15 @@
       <option name="project" value="LOCAL" />
       <updated>1706040688114</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Fixed Game Class.&#10;Created the functions to define a turn and to list the options.">
+      <option name="closed" value="true" />
+      <created>1706041496667</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1706041496667</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -104,6 +112,7 @@
     <MESSAGE value="Added in the different actions you can take along with a test example of it working." />
     <MESSAGE value="Implemented the Room class" />
     <MESSAGE value="Implemented the Game class.&#10;Created the items used to solve the riddle of the escape game.&#10;Deleted the example object since the real ones were added." />
-    <option name="LAST_COMMIT_MESSAGE" value="Implemented the Game class.&#10;Created the items used to solve the riddle of the escape game.&#10;Deleted the example object since the real ones were added." />
+    <MESSAGE value="Fixed Game Class.&#10;Created the functions to define a turn and to list the options." />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed Game Class.&#10;Created the functions to define a turn and to list the options." />
   </component>
 </project>

@@ -78,7 +78,8 @@ class Game:
     # Runs the prompt, ergo defines a turns
     def take_turn(self):
         prompt = self.get_room_prompt()
-        selection = input(prompt)
+        selection = int(input(prompt))
+        self.select_object(selection - 1)
 
     # The text prompt that allows the user to choose what to do
     def get_room_prompt(self):
@@ -89,6 +90,17 @@ class Game:
             prompt += f"{index}. {name}\n"
             index += 1
         return prompt
+
+    def select_object(self, index):
+        selected_object = self.room.game_objects[index]
+        prompt = self.get_object_interaction_string(selected_object.name)
+        interaction = input(prompt)
+        print(interaction)
+        return
+
+    def get_object_interaction_string(self, name):
+        return f"How do you want to interact with the {name}?\n 1. Look\n 2. Touch\n 3. Smell\n"
+
 
 
 game = Game()
